@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.SumaryCTL">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1180.0">
+            <children>
+                <Text layoutX="402.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sumary" textAlignment="CENTER" wrappingWidth="376.6708984375">
+                    <font>
+                        <Font size="41.0" />
+                    </font>
+                </Text>
+                <TableView fx:id="ssumary" layoutX="208.0" layoutY="160.0" prefHeight="513.0" prefWidth="765.0">
+                    <columns>
+                        <TableColumn fx:id="sIDCard" prefWidth="183.0" text="Identity Card" />
+                        <TableColumn fx:id="sfullname" prefWidth="290.0" text="Full name" />
+                        <TableColumn fx:id="snumber" prefWidth="182.0" text="Number of Bookings" />
+                        <TableColumn fx:id="srevenue" prefWidth="109.0" text="Revenue ($)" />
+                    </columns>
+                </TableView>
+                <Button layoutX="56.0" layoutY="53.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="95.0" text="&lt;&lt; Back" />
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

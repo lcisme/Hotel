@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.AddRoomCTL">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1180.0">
+            <children>
+                <Text fill="#d76bbf" layoutX="435.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room" textAlignment="CENTER" wrappingWidth="268.205078125">
+                    <font>
+                        <Font size="41.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="sIDRoom" layoutX="436.0" layoutY="169.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="267.0" promptText="ID Room" />
+                <TextField fx:id="sRoomVip" layoutX="437.0" layoutY="311.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="266.0" />
+                <TextField fx:id="sNameRoom" layoutX="436.0" layoutY="239.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="267.0" promptText="Name Room" />
+                <TextField fx:id="sPrice" layoutX="437.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="266.0" promptText="\$" />
+                <Button layoutX="636.0" layoutY="527.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submit" text="Submit" />
+                <Button layoutX="437.0" layoutY="527.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backRooms" text="Cancel" />
+            <Text layoutX="290.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Room" wrappingWidth="97.6708984375">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="290.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Room" wrappingWidth="131.6708984375">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="290.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIP" wrappingWidth="97.6708984375">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="290.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="97.6708984375">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

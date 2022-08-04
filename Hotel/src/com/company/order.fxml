@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.OrderCTL">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1180.0">
+         <children>
+            <Text layoutX="489.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order" textAlignment="CENTER" wrappingWidth="224.6708984375">
+               <font>
+                  <Font size="43.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.7572815533980582" endY="0.4271844660194175">
+                     <stops>
+                        <Stop color="#9a1616" />
+                        <Stop color="#89ff1b" offset="0.4803921568627451" />
+                        <Stop color="#c00ac9" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Button layoutX="33.0" layoutY="27.0" mnemonicParsing="false" onAction="#BackHome" prefHeight="34.0" prefWidth="92.0" text="BACK" />
+            <Button layoutX="1041.0" layoutY="27.0" mnemonicParsing="false" onAction="#AddOrder" prefHeight="35.0" prefWidth="125.0" text="ADD ORDER" />
+            <TableView fx:id="tbOrder" layoutX="32.0" layoutY="146.0" prefHeight="630.0" prefWidth="1135.0">
+              <columns>
+                <TableColumn fx:id="sIDCardOrder" prefWidth="151.0" text="Identification Order" />
+                  <TableColumn fx:id="sIDRoom" prefWidth="68.0" text="ID Room" />
+                  <TableColumn fx:id="scheckin" prefWidth="131.0" text="Check in" />
+                  <TableColumn fx:id="sIDCardCI" prefWidth="140.0" text="Identification Check In" />
+                  <TableColumn fx:id="scheckout" prefWidth="114.0" text="Check Out" />
+                  <TableColumn fx:id="sIDCardCO" prefWidth="144.0" text="IdentificationCheck out" />
+                  <TableColumn fx:id="sdeposite" prefWidth="85.0" text="Deposite" />
+                  <TableColumn fx:id="snote" prefWidth="150.0" text="Note" />
+                  <TableColumn fx:id="sedit" prefWidth="64.0" text="Edit" />
+                  <TableColumn fx:id="sremove" prefWidth="82.0" text="Remove" />
+              </columns>
+            </TableView>
+            <TextField fx:id="sSearch" layoutX="32.0" layoutY="100.0" promptText="Search By" />
+            <Button layoutX="367.0" layoutY="100.0" mnemonicParsing="false" onAction="#search" text="Search" />
+            <ComboBox fx:id="scatalog" layoutX="219.0" layoutY="100.0" prefWidth="150.0" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

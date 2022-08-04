@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.AddOrderCTL">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1180.0">
+         <children>
+            <Text fill="#d76bbf" layoutX="489.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Order" textAlignment="CENTER" wrappingWidth="224.6708984375">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Text>
+            <Button layoutX="134.0" layoutY="670.0" mnemonicParsing="false" onAction="#backorder" prefHeight="34.0" prefWidth="92.0" text="BACK" />
+            <Button layoutX="984.0" layoutY="680.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="125.0" text="Submit" />
+            <TextField fx:id="sdeposite" layoutX="273.0" layoutY="364.0" prefHeight="39.0" prefWidth="266.0" promptText="\$" />
+            <TextArea fx:id="snote" layoutX="134.0" layoutY="439.0" prefHeight="206.0" prefWidth="969.0" promptText="Note">
+               <font>
+                  <Font name="Consolas Italic" size="31.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="sIDOrder" layoutX="272.0" layoutY="152.0" prefHeight="27.0" prefWidth="269.0" promptText="Number" />
+            <Text layoutX="134.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Order" wrappingWidth="130.6708984375" />
+            <Text layoutX="134.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Room" wrappingWidth="130.6708984375" />
+            <Text layoutX="134.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check in" wrappingWidth="130.6708984375" />
+            <Text layoutX="134.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check out" wrappingWidth="130.6708984375" />
+            <Text layoutX="134.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposite" wrappingWidth="130.6708984375" />
+            <Text layoutX="559.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identification Order" wrappingWidth="174.6708984375" />
+            <Text layoutX="559.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identification Check in" wrappingWidth="190.6708984375" />
+            <Text layoutX="559.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identification Check out" textAlignment="JUSTIFY" wrappingWidth="191.6708984375" />
+            <ComboBox fx:id="sIDCardOrder" layoutX="768.0" layoutY="310.0" prefHeight="39.0" prefWidth="324.0" />
+            <ComboBox fx:id="sIDCardCI" layoutX="768.0" layoutY="258.0" prefHeight="39.0" prefWidth="324.0" />
+            <ComboBox fx:id="sIDCardCO" layoutX="768.0" layoutY="147.0" prefHeight="39.0" prefWidth="324.0" />
+            <DatePicker fx:id="scheckin" layoutX="273.0" layoutY="256.0" prefHeight="39.0" prefWidth="266.0" />
+            <DatePicker fx:id="scheckout" layoutX="272.0" layoutY="310.0" prefHeight="39.0" prefWidth="267.0" />
+            <ComboBox fx:id="sIDRoom" layoutX="272.0" layoutY="205.0" prefHeight="39.0" prefWidth="267.0" />
+         </children></AnchorPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.HomeCTL">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1180.0">
+            <children>
+                <Button layoutX="115.0" layoutY="137.0" mnemonicParsing="false" onAction="#roomsModule" prefHeight="237.0" prefWidth="423.0" text="Rooms" textFill="#127fcd">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Button>
+                <Button layoutX="637.0" layoutY="141.0" mnemonicParsing="false" onAction="#customerModule" prefHeight="229.0" prefWidth="529.0" text="Customer" textFill="#127fcc">
+                    <font>
+                        <Font size="37.0" />
+                    </font>
+                </Button>
+                <Button layoutX="402.0" layoutY="408.0" mnemonicParsing="false" onAction="#orderroomsModule" prefHeight="240.0" prefWidth="420.0" text="OrderRooms" textFill="#165ad0">
+                    <font>
+                        <Font size="60.0" />
+                    </font>
+                </Button>
+            <Text fill="#d76bbf" layoutX="317.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Pink Panther" textAlignment="CENTER" wrappingWidth="545.6650390625">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Text>
+            <Button defaultButton="true" layoutX="401.0" layoutY="661.0" mnemonicParsing="false" onAction="#sumary" prefHeight="80.0" prefWidth="423.0" text="Sumary" textFill="#127fcc">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Button>
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

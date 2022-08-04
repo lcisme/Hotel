@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.CustomerCTL">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1180.0">
+            <children>
+                <TableView fx:id="tbCustomer" layoutX="136.0" layoutY="142.0" prefHeight="559.0" prefWidth="909.0">
+                    <columns>
+                        <TableColumn fx:id="sIDCard" prefWidth="140.0" text="IDCard" />
+                        <TableColumn fx:id="sName" prefWidth="105.0" text="Name" />
+                        <TableColumn fx:id="sPhone" prefWidth="160.0" text="NumberPhone" />
+                        <TableColumn fx:id="sEmail" prefWidth="135.0" text="Email" />
+                        <TableColumn fx:id="sAddress" prefWidth="177.0" text="Address" />
+                        <TableColumn fx:id="sEdit" prefWidth="93.0" text="Edit" />
+                        <TableColumn fx:id="sRemove" prefWidth="98.0" text="Remove" />
+                    </columns>
+                </TableView>
+                <Button layoutX="1013.0" layoutY="16.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="31.0" prefWidth="125.0" text="Add" />
+                <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#backHome" prefHeight="29.0" prefWidth="93.0" text="Back" />
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

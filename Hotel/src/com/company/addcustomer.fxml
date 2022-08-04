@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.AddCustomerCTL">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1180.0">
+            <children>
+                <Text fill="#d76bbf" layoutX="456.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Customer" textAlignment="CENTER" wrappingWidth="268.205078125">
+                    <font>
+                        <Font size="41.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="sIDCard" layoutX="290.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="267.0" promptText="0********" />
+                <TextField fx:id="sPhone" layoutX="289.0" layoutY="281.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="266.0" promptText="Phone" />
+                <TextField fx:id="sName" layoutX="725.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="267.0" promptText="Name" />
+                <TextField fx:id="sEmail" layoutX="724.0" layoutY="281.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="266.0" promptText="***@gmail.com" />
+                <TextArea fx:id="sAddress" layoutX="289.0" layoutY="341.0" prefHeight="139.0" prefWidth="699.0" promptText="Address" />
+                <Button layoutX="921.0" layoutY="512.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submit" text="Submit" />
+                <Button layoutX="289.0" layoutY="521.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backCustomer" text="Cancel" />
+            <Text layoutX="137.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Card" wrappingWidth="100.6708984375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="137.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" wrappingWidth="137.6708984375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="602.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="100.6708984375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="602.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail" wrappingWidth="100.6708984375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="137.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="137.6708984375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            </children></AnchorPane>
+    </content>
+</ScrollPane>
